@@ -1,0 +1,12 @@
+{
+  "name": "dquery",
+  "title": "dQuery",
+  "version": "1.0.0",
+  "description": "Basic JavaScript library for DOM manipulation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
