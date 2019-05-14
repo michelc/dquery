@@ -40,9 +40,7 @@ if (!Element.prototype.closest) {
       return this;
     },
     css: function (a, v) {
-      // Séfini une propriété CSS sur chaque élément sélectionné
-      // (commence par transformer le "snake-case" en "camelCase")
-      a = a.replace(/(\-\w)/g, function(m) { return m[1].toUpperCase(); });
+      // Défini une propriété CSS sur chaque élément sélectionné
       return this.each(function (i) {
         i.style[a] = v;
       });
@@ -88,7 +86,7 @@ if (!Element.prototype.closest) {
       return this;
     },
     addClass: function (v) {
-      // Ajoute un classe CSS à chaque élément sélectionné
+      // Ajoute une classe CSS à chaque élément sélectionné
       return this.each(function (i) {
         if (i.classList) {
           i.classList.add(v);
@@ -115,7 +113,7 @@ if (!Element.prototype.closest) {
       });
     },
     append: function (v) {
-      // Insère un contenu HTML ou un élément à la fin de chaque élément sélectionné
+      // Insère un contenu HTML ou des éléments à la fin de chaque élément sélectionné
       return this.each(function (i) {
         i.insertAdjacentHTML("beforeend", v);
       });
@@ -138,7 +136,7 @@ if (!Element.prototype.closest) {
       return this;
     },
     attr: function (v) {
-      // Renvoie la, valeur d'un attribut du premier élément sélectionné
+      // Renvoie la valeur d'un attribut du premier élément sélectionné
       return this.items[0].getAttribute(v);
     },
   };
